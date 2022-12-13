@@ -1,0 +1,26 @@
+bdd : blog
+    - utilisateur
+        - id_utilisateur INT(3) PK AI
+        - pseudo VARCHAR(30) UNIQUE
+        - email VARCHAR(240) UNIQUE
+        - mdp VARCHAR(240)
+        - date_inscription DATE 
+        - statut INT(1)
+
+    - article 
+        - id_article INT(3) PK AI
+        - id_utilisateur INT(3) FK        
+        - titre VARCHAR(240)
+        - contenu TEXT
+        - img_principale VARCHAR(240)
+        - date_enregistrement DATETIME 
+
+    - categorie 
+        - id_categorie INT(3) PK AI
+        - nom_categorie VARCHAR(240)
+
+    - relation_article_categorie
+        - id_relation INT(3) PK AI 
+        - id_article INT(3) FK
+        - id_categorie INT(3) FK
+        
