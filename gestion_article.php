@@ -50,8 +50,6 @@ include 'inc/nav.inc.php';
                 <div class="col-12">
                     <table class="table table-bordered mt-5">
                         <tr>
-                            <th>Id article</th>
-                            <th>Id utilisateur</th>
                             <th>Titre</th>
                             <th>Catégorie</th>
                             <th>Contenu</th>

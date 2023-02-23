@@ -50,8 +50,8 @@ $tableau = '';
 foreach($liste_articles AS $sous_tableau) {
     $tableau .= '<tr>';
 
-    $tableau .= '<td>' . $sous_tableau['id_article'] . '</td>';
-    $tableau .= '<td>' . $sous_tableau['id_utilisateur'] . '</td>';
+    // $tableau .= '<td>' . $sous_tableau['id_article'] . '</td>';
+    // $tableau .= '<td>' . $sous_tableau['id_utilisateur'] . '</td>';
     $tableau .= '<td>' . $sous_tableau['titre'] . '</td>';
     $tableau .= '<td>' . $sous_tableau['nom_categorie'] . '</td>';
     $tableau .= '<td>' . substr($sous_tableau['contenu'], 0, 11) . ' ...</td>';
