@@ -83,7 +83,9 @@ include 'inc/nav.inc.php';
                         </div>
                         <div class="mb-3">
                             <label for="mdp">Mot de passe</label>
-                            <input type="text" name="mdp" id="mdp" class="form-control">
+                            <input type="password" name="mdp" id="mdp" class="form-control">
+                            <!-- Afficher le mot de passe -->
+                            <input type="checkbox" onclick="showPass()">Show Password
                         </div>
                         <button type="submit" class="btn btn-outline-dark w-100">Connexion</button>
                     </form>

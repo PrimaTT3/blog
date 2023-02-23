@@ -35,7 +35,7 @@ include 'inc/nav.inc.php';
                     </ul>
                 </div>
                 <div class="col-6 mt-3">
-                    <img src="assets/img/profil.webp" alt="image de profil" class="img-thumbnail">
+                    <img src="assets/img/profil.jpg" alt="image de profil" class="img-thumbnail">
                 </div>
             </div>
         </div>
