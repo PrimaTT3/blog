@@ -44,11 +44,3 @@ function delete_post($id_article) {
     $suppression->execute();
 }
 
-function modifie_articles($titre, $img_principale, $id_categorie, $contenu) {
-    global $pdo;
-    $modifie = $pdo->prepare("UPDATE article SET (titre, img_principale, contenu) VALUES (:titre, :img_principale, :contenu) WHERE id_article = :id_article");
-    $modifie->bindParam(':titre', $titre, PDO::PARAM_STR);
-    $modifie->bindParam(':img_principale', $img_principale, PDO::PARAM_STR);
-    $modifie->bindParam(':contenu', $contenu, PDO::PARAM_STR);
-    $modifie->execute();
-}

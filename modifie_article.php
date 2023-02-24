@@ -10,11 +10,12 @@ include 'controller/gestion_article.php';
 // début des affichages
 include 'inc/header.inc.php';
 include 'inc/nav.inc.php';
+
 ?>
 
 
         <div class="bg-light p-5 rounded">
-            <h1 class="text-center border-bottom pb-3">Blog | Gestion article</h1>
+            <h1 class="text-center border-bottom pb-3">Blog | Modification article</h1>
             <?php echo $msg; ?>
         </div>
 
@@ -31,17 +32,11 @@ include 'inc/nav.inc.php';
                             <input type="text" name="img_principale" id="img_principale" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="id_categorie">Catégorie</label>
-                            <select name="id_categorie" id="id_categorie" class="form-select">
-                                <?php echo $options; ?>
-                            </select>
-                        </div>
-                        <div class="mb-3">
                             <label for="contenu">Contenu</label>
-                            <textarea name="contenu" id="contenu" class="form-control" rows="14"></textarea>
+                            <textarea name="contenu" id="contenu" rows="14" class="form-control"></textarea>
                         </div>
                        
-                        <button type="submit" class="btn btn-outline-dark w-100">Enregistrement</button>
+                        <button type="submit" class="btn btn-outline-dark w-100">Modifier</button>
                     </form>
                 </div>
             </div>

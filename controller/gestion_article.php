@@ -42,9 +42,8 @@ if(isset($_GET['action']) && $_GET['action'] == 'supprimer' && !empty($_GET['id_
     header('location: gestion_article.php');
 }
 
-if( isset($_GET['titre']) && isset($_GET['img_principale']) && isset($_GET['id_categorie']) && isset($_GET['contenu']) && isset($_GET['modifie']) && $_GET['modifie']== 'modifie' && !empty($_GET['id_article'])) {
-    modifie_articles($titre, $img_principale, $id_categorie, $contenu);
-}
+// Modification d'un article
+
 
 // Affichage du tableau html
 $liste_articles = get_articles();
@@ -60,7 +59,7 @@ foreach($liste_articles AS $sous_tableau) {
     $tableau .= '<td><img src="' . $sous_tableau['img_principale'] . '" style="width: 100px;"></td>';
     $tableau .= '<td>' . $sous_tableau['date_enregistrement'] . '</td>';
     $tableau .= '<td><a href="?action=supprimer&id_article=' . $sous_tableau['id_article'] . '" class="btn btn-danger" onclick="return(confirm(\' êtes vous sûr ?\'))" ><i class="bi bi-trash"></i></a></td>';
-    $tableau .= '<td><a href="?action=modifie&id_article=' . $sous_tableau['id_article'] . '" class="btn btn-primary" onclick="" ><i class="bi bi-pencil-square"></i></a></td>';
+    $tableau .= '<td><a href="modifie_article.php?action=modifie&id_article=' . $sous_tableau['id_article']. '" class="btn btn-primary" id="modifieArticle"><i class="bi bi-pencil-square"></i></a></td>';
 
     $tableau .= '</tr>';
 }
