@@ -55,7 +55,6 @@ include 'inc/nav.inc.php';
                             <th>Image principale</th>
                             <th>Date enregistrement</th>
                             <th>Supprimer</th>
-                            <th>Modifier</th>
                         </tr>
                         <?php echo $tableau; ?>
                     </table>

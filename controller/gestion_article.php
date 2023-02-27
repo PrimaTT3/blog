@@ -59,7 +59,6 @@ foreach($liste_articles AS $sous_tableau) {
     $tableau .= '<td><img src="' . $sous_tableau['img_principale'] . '" style="width: 100px;"></td>';
     $tableau .= '<td>' . $sous_tableau['date_enregistrement'] . '</td>';
     $tableau .= '<td><a href="?action=supprimer&id_article=' . $sous_tableau['id_article'] . '" class="btn btn-danger" onclick="return(confirm(\' êtes vous sûr ?\'))" ><i class="bi bi-trash"></i></a></td>';
-    $tableau .= '<td><a href="modifie_article.php?action=modifie&id_article=' . $sous_tableau['id_article']. '" class="btn btn-primary" id="modifieArticle"><i class="bi bi-pencil-square"></i></a></td>';
 
     $tableau .= '</tr>';
 }

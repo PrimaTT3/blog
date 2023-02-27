@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="La description de mon blog ...">
-    <meta name="author" content="Nom prénom">
+    <meta name="author" content="Thomas Bockermann">
     <title>Mon Blog</title>
 
 

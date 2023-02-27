@@ -16,7 +16,6 @@ include 'inc/nav.inc.php';
 
         <div class="bg-light p-5 rounded">
             <h1 class="text-center border-bottom pb-3">Blog | Modification article</h1>
-            <?php echo $msg; ?>
         </div>
 
         <div class="container">
@@ -28,8 +27,10 @@ include 'inc/nav.inc.php';
                             <input type="text" name="titre" id="titre" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="img_principale">Image principale</label>
-                            <input type="text" name="img_principale" id="img_principale" class="form-control">
+                            <label for="id_categorie">Catégorie</label>
+                            <select name="id_categorie" id="id_categorie" class="form-select">
+                                <?php echo $options; ?>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label for="contenu">Contenu</label>
