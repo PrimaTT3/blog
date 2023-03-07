@@ -79,7 +79,6 @@ include 'inc/fonctions.inc.php'; // des fonctions utiles
         if($erreur == false) {
             // cryptage du mdp : bonne pratique : password_hash($mdp, PASSWORD_DEFAULT);
             $mdp = password_hash($mdp, PASSWORD_DEFAULT);
-            // echo $mdp;
 
             /*
             Pour le statut :
