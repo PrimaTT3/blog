@@ -69,7 +69,6 @@ include 'inc/nav.inc.php';
 
         <div class="bg-light p-5 rounded">
             <h1 class="text-center border-bottom pb-3">Blog | connexion</h1>
-            <p class="lead text-center">Bienvenue sur notre blog</p>
             <?php echo $msg; ?>
         </div>
 
