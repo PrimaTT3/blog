@@ -1,5 +1,5 @@
 <?php
-include 'inc/init.inc.php'; // initialisation du site
+include 'inc/init.inc.php';      // initialisation du site
 include 'inc/fonctions.inc.php'; // des fonctions utiles
 
     // Si l'utilisateur est connecté, on le redirige sur profil.php
