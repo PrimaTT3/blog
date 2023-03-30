@@ -26,8 +26,9 @@ include 'inc/fonctions.inc.php'; // des fonctions utiles
         } 
 
         // caractères dans le pseudo
-        // On test la pseudo avec une expression regulière (voir wikipedia)
+        // On test le pseudo avec une expression regulière
         $verif_caracteres = preg_match('#^[A-Za-z0-9]+$#', $pseudo);
+
         /*
             Expression régulière :
             ----------------------
